@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DB_QLSTModelStoreContainer" CdmEntityContainer="QLSTEntities">
+  <EntityContainerMapping StorageEntityContainer="QLSieuThiModelStoreContainer" CdmEntityContainer="QLSieuThiEntities">
     <EntitySetMapping Name="CHITIET_HDBH">
-      <EntityTypeMapping TypeName="DB_QLSTModel.CHITIET_HDBH">
+      <EntityTypeMapping TypeName="QLSieuThiModel.CHITIET_HDBH">
         <MappingFragment StoreEntitySet="CHITIET_HDBH">
           <ScalarProperty Name="SOHD" ColumnName="SOHD" />
           <ScalarProperty Name="MAHANG" ColumnName="MAHANG" />
@@ -14,7 +14,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CHITIET_HDNH">
-      <EntityTypeMapping TypeName="DB_QLSTModel.CHITIET_HDNH">
+      <EntityTypeMapping TypeName="QLSieuThiModel.CHITIET_HDNH">
         <MappingFragment StoreEntitySet="CHITIET_HDNH">
           <ScalarProperty Name="SOHDNHAP" ColumnName="SOHDNHAP" />
           <ScalarProperty Name="MAHANG" ColumnName="MAHANG" />
@@ -26,7 +26,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="HANGHOAs">
-      <EntityTypeMapping TypeName="DB_QLSTModel.HANGHOA">
+      <EntityTypeMapping TypeName="QLSieuThiModel.HANGHOA">
         <MappingFragment StoreEntitySet="HANGHOA">
           <ScalarProperty Name="MAHANG" ColumnName="MAHANG" />
           <ScalarProperty Name="TENHANG" ColumnName="TENHANG" />
@@ -39,7 +39,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="HOADONBANHANGs">
-      <EntityTypeMapping TypeName="DB_QLSTModel.HOADONBANHANG">
+      <EntityTypeMapping TypeName="QLSieuThiModel.HOADONBANHANG">
         <MappingFragment StoreEntitySet="HOADONBANHANG">
           <ScalarProperty Name="SOHD" ColumnName="SOHD" />
           <ScalarProperty Name="NGAYLAP" ColumnName="NGAYLAP" />
@@ -51,7 +51,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="HOADONNHAPHANGs">
-      <EntityTypeMapping TypeName="DB_QLSTModel.HOADONNHAPHANG">
+      <EntityTypeMapping TypeName="QLSieuThiModel.HOADONNHAPHANG">
         <MappingFragment StoreEntitySet="HOADONNHAPHANG">
           <ScalarProperty Name="SOHDNHAP" ColumnName="SOHDNHAP" />
           <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
@@ -66,7 +66,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="KHACHHANGs">
-      <EntityTypeMapping TypeName="DB_QLSTModel.KHACHHANG">
+      <EntityTypeMapping TypeName="QLSieuThiModel.KHACHHANG">
         <MappingFragment StoreEntitySet="KHACHHANG">
           <ScalarProperty Name="MAKH" ColumnName="MAKH" />
           <ScalarProperty Name="TENKH" ColumnName="TENKH" />
@@ -76,7 +76,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="LOAIHANGHOAs">
-      <EntityTypeMapping TypeName="DB_QLSTModel.LOAIHANGHOA">
+      <EntityTypeMapping TypeName="QLSieuThiModel.LOAIHANGHOA">
         <MappingFragment StoreEntitySet="LOAIHANGHOA">
           <ScalarProperty Name="MALOAIHH" ColumnName="MALOAIHH" />
           <ScalarProperty Name="TENLOAIHH" ColumnName="TENLOAIHH" />
@@ -84,7 +84,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NHACUNGCAPs">
-      <EntityTypeMapping TypeName="DB_QLSTModel.NHACUNGCAP">
+      <EntityTypeMapping TypeName="QLSieuThiModel.NHACUNGCAP">
         <MappingFragment StoreEntitySet="NHACUNGCAP">
           <ScalarProperty Name="MANCC" ColumnName="MANCC" />
           <ScalarProperty Name="TENNCC" ColumnName="TENNCC" />
@@ -94,27 +94,27 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NHANVIENs">
-      <EntityTypeMapping TypeName="DB_QLSTModel.NHANVIEN">
+      <EntityTypeMapping TypeName="QLSieuThiModel.NHANVIEN">
         <MappingFragment StoreEntitySet="NHANVIEN">
-          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
           <ScalarProperty Name="MANV" ColumnName="MANV" />
           <ScalarProperty Name="TENNV" ColumnName="TENNV" />
           <ScalarProperty Name="CHUCVU" ColumnName="CHUCVU" />
           <ScalarProperty Name="NGAYCONG" ColumnName="NGAYCONG" />
           <ScalarProperty Name="LUONGCOBAN" ColumnName="LUONGCOBAN" />
           <ScalarProperty Name="TONGLUONG" ColumnName="TONGLUONG" />
+          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="PR_KTKH" FunctionName="DB_QLSTModel.Store.PR_KTKH" />
-    <FunctionImportMapping FunctionImportName="PR_SOLANMUAHANG" FunctionName="DB_QLSTModel.Store.PR_SOLANMUAHANG" />
-    <FunctionImportMapping FunctionImportName="PR_SOLANNHAP" FunctionName="DB_QLSTModel.Store.PR_SOLANNHAP" />
-    <FunctionImportMapping FunctionImportName="PR_THONGTINHANGHOA" FunctionName="DB_QLSTModel.Store.PR_THONGTINHANGHOA" />
-    <FunctionImportMapping FunctionImportName="PR_XEMKH" FunctionName="DB_QLSTModel.Store.PR_XEMKH" />
-    <FunctionImportMapping FunctionImportName="PR_XEMNCC" FunctionName="DB_QLSTModel.Store.PR_XEMNCC" />
-    <FunctionImportMapping FunctionImportName="PR_XEMNGAYLAPHD" FunctionName="DB_QLSTModel.Store.PR_XEMNGAYLAPHD" />
-    <FunctionImportMapping FunctionImportName="PR_XEMNGAYNHAPHH" FunctionName="DB_QLSTModel.Store.PR_XEMNGAYNHAPHH" />
-    <FunctionImportMapping FunctionImportName="PR_XEMNV" FunctionName="DB_QLSTModel.Store.PR_XEMNV" />
-    <FunctionImportMapping FunctionImportName="PR_XEMTONGTIEN" FunctionName="DB_QLSTModel.Store.PR_XEMTONGTIEN" />
+    <FunctionImportMapping FunctionImportName="PR_KTKH" FunctionName="QLSieuThiModel.Store.PR_KTKH" />
+    <FunctionImportMapping FunctionImportName="PR_SOLANMUAHANG" FunctionName="QLSieuThiModel.Store.PR_SOLANMUAHANG" />
+    <FunctionImportMapping FunctionImportName="PR_SOLANNHAP" FunctionName="QLSieuThiModel.Store.PR_SOLANNHAP" />
+    <FunctionImportMapping FunctionImportName="PR_THONGTINHANGHOA" FunctionName="QLSieuThiModel.Store.PR_THONGTINHANGHOA" />
+    <FunctionImportMapping FunctionImportName="PR_XEMKH" FunctionName="QLSieuThiModel.Store.PR_XEMKH" />
+    <FunctionImportMapping FunctionImportName="PR_XEMNCC" FunctionName="QLSieuThiModel.Store.PR_XEMNCC" />
+    <FunctionImportMapping FunctionImportName="PR_XEMNGAYLAPHD" FunctionName="QLSieuThiModel.Store.PR_XEMNGAYLAPHD" />
+    <FunctionImportMapping FunctionImportName="PR_XEMNGAYNHAPHH" FunctionName="QLSieuThiModel.Store.PR_XEMNGAYNHAPHH" />
+    <FunctionImportMapping FunctionImportName="PR_XEMNV" FunctionName="QLSieuThiModel.Store.PR_XEMNV" />
+    <FunctionImportMapping FunctionImportName="PR_XEMTONGTIEN" FunctionName="QLSieuThiModel.Store.PR_XEMTONGTIEN" />
   </EntityContainerMapping>
 </Mapping>
