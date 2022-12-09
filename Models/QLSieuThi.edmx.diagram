@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="07b760b3997d484484e298870aa64626" Name="Diagram1">
+        <EntityTypeShape EntityType="QLSieuThiModel.CHITIET_HDBH" Width="1.5" PointX="5.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiModel.CHITIET_HDNH" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiModel.HANGHOA" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiModel.HOADONBANHANG" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiModel.HOADONNHAPHANG" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiModel.LOAIHANGHOA" Width="1.5" PointX="1.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiModel.NHACUNGCAP" Width="1.5" PointX="1.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSieuThiModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="QLSieuThiModel.FK_CTHDBH_HDBH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiModel.FK_CTHDNH_HDNH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiModel.FK_HDBH_HH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiModel.FK_HDNH_HH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiModel.FK_HH_LHH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiModel.FK_HH_NCC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiModel.FK_HDBH_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiModel.FK_HDBH_NV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSieuThiModel.FK_HDNH_NV" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

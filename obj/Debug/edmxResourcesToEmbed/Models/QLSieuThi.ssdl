@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DB_QLSTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="QLSieuThiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="CHITIET_HDBH">
     <Key>
       <PropertyRef Name="SOHD" />
@@ -250,7 +250,7 @@
     <Parameter Name="MAHD" Type="char" Mode="In" />
     <Parameter Name="TONGTIEN" Type="money" Mode="InOut" />
   </Function>
-  <EntityContainer Name="DB_QLSTModelStoreContainer">
+  <EntityContainer Name="QLSieuThiModelStoreContainer">
     <EntitySet Name="CHITIET_HDBH" EntityType="Self.CHITIET_HDBH" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CHITIET_HDNH" EntityType="Self.CHITIET_HDNH" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HANGHOA" EntityType="Self.HANGHOA" Schema="dbo" store:Type="Tables" />
